@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******header *****/
+.OhMyFoodLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_header {
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_texte {
+  text-align: center;
+}
+
+.header_btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e295cc), to(#9356DC));
+  background: linear-gradient(#e295cc, #9356DC);
+  width: 250px;
+  height: 50px;
+  border-radius: 40px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header_mapMakerIcon {
+  padding-right: 0.8rem;
+  color: #464646;
+}
+
+.header_mapMaker {
+  background-color: #f0efef;
+}
+
+/***** Fonctionnement *****/
+.Fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Fonctionnement h2 {
+  margin-left: 1rem;
+}
+
+.Fonctionnement_Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+  height: 60px;
+  width: 300px;
+  font-size: 1rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+          box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+  margin: 0.5rem;
+  margin-left: 2rem;
+}
+
+.Fonctionnement_Card--circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.6rem;
+  position: relative;
+  margin-left: -7px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.Fonctionnement_Card--fas {
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.Fonctionnement_Card:active .Fonctionnement_Card--fas {
+  color: #9356DC;
+}
+
+.Fonctionnement_Card:hover .Fonctionnement_Card--fas {
+  color: #9356DC;
+}
+
+/***** Restaurants *****/
+.Container_Carte_Restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f5;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Carte_Restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  width: 350px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+          box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+}
+
+.Carte_Restaurants_Photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 170px;
+  width: 350px;
+}
+
+.Carte_Restaurants_TexteSousImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding-left: 1rem;
+}
+
+.Carte_Restaurants_Coeur {
+  position: absolute;
+  margin-left: 300px;
+  font-size: 1.4rem;
+}
+
+.Carte_Restaurants_Popup {
+  background-color: #99E2D0;
+  color: #139273;
+  width: 70px;
+  text-align: center;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 1rem;
+  border-radius: 3px;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.La_note_enchantée {
+  -o-object-position: 40% 60%;
+     object-position: 40% 60%;
+}
+
+.A_la_Francaise {
+  -o-object-position: 10% 90%;
+     object-position: 10% 90%;
+}
+
+/***** Footer *****/
+footer {
+  background-color: #353535;
+}
+
+.Footer {
+  margin-left: 1rem;
+  color: white;
+}
+
+.Footer a {
+  color: white;
+}
+
+.Footer p {
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.Footer_Couverts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer_Couverts p {
+  padding-left: 0.5rem;
+}
+
+.Footer_Partenaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer_Partenaire p {
+  padding-left: 0.3rem;
+}
+
+.Footer_Logo {
+  margin-top: 1rem;
+  color: white;
+}
+
+.Footer_TexteBas {
+  padding-bottom: 1rem;
+}
+
+/***** A la Française *****/
+.fa-arrow-left {
+  color: black;
+  margin-right: 6rem;
+}
+
+.OhMyFoodLogoMenu {
+  margin-right: 6rem;
+}
+
+.A_la_Francaise {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  width: 375px;
+  position: absolute;
+  top: 250px;
+}
+
+.A_la_Francaise_Titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+}
+
+.A_la_Francaise_Coeur {
+  margin-left: 10rem;
+  font-size: 1.3rem;
+}
+
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-radius: 13px;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+          box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+}
+
+.Card_Titre {
+  margin-left: 1rem;
+  border-bottom: solid 2px #99E2D0;
+  width: 50px;
+  text-transform: uppercase;
+}
+
+.Card_TitrePlats {
+  margin-left: 1rem;
+  border-bottom: solid 2px #99E2D0;
+  width: 40px;
+  text-transform: uppercase;
+}
+
+.Card_Anime {
+  background-color: #99E2D0;
+  width: 60px;
+  height: 70px;
+  border-radius: 0 13px 13px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.Card_Anime .fa-check-circle {
+  -webkit-transform: rotateX(0turn);
+          transform: rotateX(0turn);
+}
+
+.Card:active .Card_Anime {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+/*# sourceMappingURL=styles.css.map */
