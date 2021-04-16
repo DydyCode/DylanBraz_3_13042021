@@ -2,10 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   margin-left: 0;
+  font-family: "roboto";
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
 
 /******header *****/
@@ -200,7 +205,7 @@ a {
   border-radius: 3px;
 }
 
-.bold {
+.Carte_Restaurants_bold {
   font-weight: bold;
   color: black;
 }
@@ -216,7 +221,7 @@ a {
 }
 
 /***** Footer *****/
-footer {
+.Footer {
   background-color: #353535;
 }
 
@@ -306,10 +311,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -341,36 +342,8 @@ footer {
   text-transform: uppercase;
 }
 
-.Card_Anime {
-  background-color: #99E2D0;
-  width: 60px;
-  height: 70px;
-  border-radius: 0 13px 13px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
-}
-
-.Card_Anime .fa-check-circle {
-  -webkit-transform: rotateX(0turn);
-          transform: rotateX(0turn);
-}
-
-.Card:active .Card_Anime {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+.fa-heart:active {
+  color: #9356DC;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

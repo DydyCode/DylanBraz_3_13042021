@@ -5,9 +5,13 @@ $couleur_Tertiaire:#99E2D0;
 $couleur_TertiaireSombre:#139273;
 body {
     margin-left: 0;
+    font-family: "roboto";
 }
 a {
     text-decoration: none;
+}
+a:visited {
+    color: black;
 }
 /******header *****/
 .OhMyFoodLogo {
@@ -136,11 +140,11 @@ a {
        margin-top: 1rem;
        border-radius: 3px;
     }
+    &_bold {
+        font-weight: bold;
+        color: black;
+    }
     
-}
-.bold {
-    font-weight: bold;
-    color: black;
 }
 .La_note_enchantée {
     object-position: 40% 60%;
@@ -149,7 +153,7 @@ a {
     object-position: 10% 90%;
 }
 /***** Footer *****/ 
-footer {
+.Footer {
     background-color: #353535;
 }
 .Footer {
@@ -211,7 +215,6 @@ footer {
 
 .Card {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     background-color: white;
@@ -235,28 +238,9 @@ footer {
     width: 40px;
     text-transform: uppercase;
 }
-.Card_Anime {
-    background-color: $couleur_Tertiaire;
-    width: 60px;
-    height: 70px;
-    border-radius: 0 13px 13px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform:translateX(100px);
-    & .fa-check-circle {
-        transform: rotateX(0turn);
-    }
+
+
+.fa-heart:active {
+    color:$couleur_primaire;
+    cursor: pointer;
 }
-.Card {
-    &:active {
-        .Card_Anime {
-            transform: translateX(0px);
-            transition: transform 0.4s;
-        }
-    }
-}
-
-
-
