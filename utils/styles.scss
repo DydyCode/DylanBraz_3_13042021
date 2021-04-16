@@ -198,7 +198,8 @@ a:visited {
 }
 .fa-arrow-left {
     color: black;
-    margin-right: 6rem;
+    margin-right: 5rem;
+    margin-bottom:.5rem;
 }
 .OhMyFoodLogoMenu {
     margin-right: 6rem;
@@ -237,6 +238,13 @@ a:visited {
         border-bottom: solid 2px $couleur_Tertiaire;
         width: 50px;
         text-transform: uppercase;
+    }
+    &_bold {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    &_prix {
+        font-weight: bold;
     }
 }
 .Card_TitrePlats {

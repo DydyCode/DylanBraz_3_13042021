@@ -284,7 +284,8 @@ a:visited {
 
 .fa-arrow-left {
   color: black;
-  margin-right: 6rem;
+  margin-right: 5rem;
+  margin-bottom: .5rem;
 }
 
 .OhMyFoodLogoMenu {
@@ -340,6 +341,15 @@ a:visited {
   border-bottom: solid 2px #99E2D0;
   width: 50px;
   text-transform: uppercase;
+}
+
+.Card_bold {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.Card_prix {
+  font-weight: bold;
 }
 
 .Card_TitrePlats {
