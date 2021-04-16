@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
   font-family: "roboto";
 }
 
@@ -11,6 +12,111 @@ a {
 
 a:visited {
   color: black;
+}
+
+/***** Loading Spinner *****/
+#loading {
+  position: absolute;
+  z-index: 3;
+  background-color: #9356DC;
+  height: 2000px;
+  width: 375px;
+  cursor: wait;
+  -webkit-animation: loading 3s forwards;
+          animation: loading 3s forwards;
+}
+
+#loading_Spinner {
+  margin-left: 9rem;
+  border: 3px solid #8f8f8f;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: inline-block;
+  border-top-color: #ffff;
+  -webkit-animation: spin 1s ease-in-out infinite;
+          animation: spin 1s ease-in-out infinite;
+}
+
+#loading_Titre {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+#loading_Circle {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#loading_Circle > div {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation: circle 1.5s infinite ease-in-out both;
+          animation: circle 1.5s infinite ease-in-out both;
+}
+
+#loading_Circle #Circle1 {
+  -webkit-animation-delay: -0.30s;
+          animation-delay: -0.30s;
+}
+
+#loading_Circle #Circle2 {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes loading {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes loading {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes circle {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes circle {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 /******header *****/
@@ -221,6 +327,11 @@ a:visited {
 }
 
 /***** Footer *****/
+.Footer_Logo {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .Footer {
   background-color: #353535;
   width: 350px;
@@ -228,7 +339,7 @@ a:visited {
 }
 
 .Footer {
-  margin-left: 1rem;
+  padding-left: 1rem;
   color: white;
 }
 
