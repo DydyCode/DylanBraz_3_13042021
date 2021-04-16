@@ -223,6 +223,8 @@ a:visited {
 /***** Footer *****/
 .Footer {
   background-color: #353535;
+  width: 350px;
+  margin-top: 1rem;
 }
 
 .Footer {
@@ -288,7 +290,6 @@ a:visited {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   width: 375px;
-  position: absolute;
   top: 250px;
 }
 
