@@ -192,6 +192,10 @@ a:visited {
     }
 }
 /***** A la Française *****/ 
+.header_Background {
+   position: absolute;
+   z-index: -1;
+}
 .fa-arrow-left {
     color: black;
     margin-right: 6rem;
@@ -200,11 +204,11 @@ a:visited {
     margin-right: 6rem;
 }
 .A_la_Francaise {
+    z-index: 1;
     background-color: #f6f6f6;
     border-radius:40px 40px 0 0;
     width: 375px;
-    // position: absolute;
-    top: 250px;
+    margin-top: 210px;
     &_Titre {
         display: flex;
         align-items: center;
