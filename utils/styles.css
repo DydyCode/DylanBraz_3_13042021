@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 body {
   margin: 0;
   padding: 0;
-  font-family: "roboto";
+  font-family: "Roboto";
 }
 
 a {
@@ -178,6 +178,8 @@ a:visited {
 
 .header_mapMaker {
   background-color: #f0efef;
+  -webkit-box-shadow: inset 0px 4px 5px -4px #646464;
+          box-shadow: inset 0px 4px 5px -4px #646464;
 }
 
 /***** Fonctionnement *****/
@@ -262,6 +264,10 @@ a:visited {
       flex-wrap: wrap;
 }
 
+.Container_Carte_Restaurants_h2 {
+  margin: 1rem 200px 0 0;
+}
+
 .Carte_Restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +323,10 @@ a:visited {
 .Carte_Restaurants_bold {
   font-weight: bold;
   color: black;
+}
+
+.Carte_Restaurants_Texte {
+  font-size: 18px;
 }
 
 .La_note_enchantée {
@@ -449,6 +459,12 @@ a:visited {
 .header_Background {
   position: absolute;
   z-index: -1;
+}
+
+.header_texte {
+  text-align: center;
+  width: 250px;
+  margin-left: 4rem;
 }
 
 .fa-arrow-left {

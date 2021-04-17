@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 $couleur_primaire:#9356DC;
 $couleur_secondaire:#FF79DA;
 $couleur_Tertiaire:#99E2D0;
@@ -6,8 +6,7 @@ $couleur_TertiaireSombre:#139273;
 body {
     margin: 0;
     padding: 0;
-    font-family: "roboto";
-
+    font-family: "Roboto";
 }
 a {
     text-decoration: none;
@@ -112,6 +111,7 @@ a:visited {
     }
     &_mapMaker {
         background-color: #f0efef;
+        box-shadow: inset 0px 4px 5px -4px #646464;
     }
 }
 
@@ -172,6 +172,9 @@ a:visited {
     justify-content: center;
     background-color: #f5f5f5;
     flex-wrap: wrap;
+    &_h2 {
+        margin: 1rem 200px 0 0 ;
+    }
 }
 .Carte_Restaurants {
     display: flex;
@@ -211,6 +214,9 @@ a:visited {
     &_bold {
         font-weight: bold;
         color: black;
+    }
+    &_Texte {
+        font-size: 18px;
     }
     
 }
@@ -290,6 +296,11 @@ a:visited {
 .header_Background {
    position: absolute;
    z-index: -1;
+}
+.header_texte {
+    text-align: center;
+    width: 250px;
+    margin-left: 4rem;
 }
 .fa-arrow-left {
     color: black;
