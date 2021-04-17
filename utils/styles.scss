@@ -299,7 +299,7 @@ a:visited {
 .OhMyFoodLogoMenu {
     margin-right: 6rem;
 }
-.A_la_Francaise {
+.Menus {
     z-index: 1;
     background-color: #f6f6f6;
     border-radius:40px 40px 0 0;
@@ -308,10 +308,9 @@ a:visited {
     &_Titre {
         display: flex;
         align-items: center;
-        margin-left: 1rem;
+        justify-content:space-around;
     }
     &_Coeur {
-        margin-left: 10rem;
         font-size: 1.3rem;
     }
 }
@@ -342,7 +341,6 @@ a:visited {
     &_prix {
         font-weight: bold;
         font-size: 17px;
-        padding-top: 1.3rem;
     }
     & p {
        width: 100%;
