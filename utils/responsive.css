@@ -1,0 +1,11 @@
+@media (min-width:568px) {
+    .header_texte {
+        margin-right: 1rem;
+        background-color: red;
+    }
+}
+@media (min-width:1024px) {
+    .header_texte {
+        background-color: blue;
+    }
+}
