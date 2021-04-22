@@ -16,6 +16,7 @@ a:visited {
 }
 /***** Loading Spinner *****/
 #loading {
+    display: none;
     position: absolute;
     text-align: center;
     z-index: 3;
@@ -206,8 +207,10 @@ a:visited {
     background-color: #f5f5f5;
     flex-wrap: wrap;
     &_h2 {
-        height: 30px;
-        margin: 1rem 200px 0 0 ;
+        background-color: #f5f5f5;
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 3rem;
     }
 }
 .Carte_Restaurants {
@@ -272,28 +275,23 @@ a:visited {
         margin: 1rem;
     }
 }
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1366px) {
     .Carte_Restaurants {
-        width: 450px;
-        height: 300px;
+        width: 550px;
+        height: 350px;
         &_Photo {
-            width: 450px;
-            height: 220px;
+            width: 550px;
+            height: 270px;
         }
         &_Popup {
-            margin-left: 370px;
+            margin-left: 470px;
         }
-        &_Coeur {
-            margin-left: 380px;
+        &_Coeur{
+            margin-left: 490px;
         }
     }
 }
-.La_note_enchantée {
-    object-position: 40% 60%;
-}
-.A_la_Francaise {
-    object-position: 10% 90%;
-}
+
 /***** Footer *****/ 
 .Footer_Logo {
     filter: invert(100%)
@@ -301,7 +299,6 @@ a:visited {
 .Footer {
     background-color: #353535;
     width: 100%;
-    margin-top: 1rem;
 }
 .Footer {
     padding-left: 1rem;
@@ -392,12 +389,18 @@ a:visited {
         font-size: 1.3rem;
     }
 }
+@media screen and (min-width:1366px) {
+    .Menus {
+        margin-top: 700px;
+    }
+}
 .Card {
     display: flex;
     align-items: center;
     background-color: white;
     width: 85%;
     height: 70px;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
