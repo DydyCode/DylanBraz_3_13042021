@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+/*Réglages de base */
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +25,16 @@ a:visited {
 
 /***** Loading Spinner *****/
 #loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   text-align: center;
   z-index: 3;
@@ -45,50 +56,13 @@ a:visited {
           animation: spin 1s ease-in-out infinite;
 }
 
+#loading_Circle {
+  padding-top: 2rem;
+}
+
 #loading_Titre {
   color: white;
   font-size: 2rem;
-  text-align: center;
-  margin-left: 2rem;
-  margin-top: 5rem;
-}
-
-#loading_Circle {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-#loading_Circle > div {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #ffff;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-animation: circle 1.5s infinite ease-in-out both;
-          animation: circle 1.5s infinite ease-in-out both;
-}
-
-@media screen and (max-width: 400px) {
-  #loading_Titre {
-    font-size: 1.5rem;
-  }
-  #loading_Circle {
-    font-size: 1.5rem;
-  }
-  #loading_Spinner {
-    width: 5rem;
-    height: 5rem;
-  }
-}
-
-#loading_Circle #Circle1 {
-  -webkit-animation-delay: -0.30s;
-          animation-delay: -0.30s;
-}
-
-#loading_Circle #Circle2 {
-  -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
 }
 
 @-webkit-keyframes loading {
@@ -139,15 +113,37 @@ a:visited {
   }
 }
 
-@media (max-width: 1440px) {
-  #loading_Spinner {
-    margin-left: 48%;
-  }
+#loading_Circle > div {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation: circle 1.5s infinite ease-in-out both;
+          animation: circle 1.5s infinite ease-in-out both;
 }
 
-@media (max-width: 1024px) {
+#loading_Circle #Circle1 {
+  -webkit-animation-delay: -0.30s;
+          animation-delay: -0.30s;
+}
+
+#loading_Circle #Circle2 {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+/* Responsive Loading Spinner */
+@media screen and (max-width: 400px) {
+  #loading_Titre {
+    font-size: 1.5rem;
+  }
+  #loading_Circle {
+    font-size: 1.5rem;
+  }
   #loading_Spinner {
-    margin-left: 45%;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
@@ -213,6 +209,26 @@ a:visited {
   background-color: #f0efef;
   -webkit-box-shadow: inset 0px 4px 5px -4px #646464;
           box-shadow: inset 0px 4px 5px -4px #646464;
+}
+
+/* Responsive header background */
+@media (min-width: 500px) {
+  .header_Background {
+    height: 35%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  .header_Background {
+    height: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Menus {
+    margin-top: 325px;
+  }
 }
 
 /***** Fonctionnement *****/
@@ -363,6 +379,7 @@ a:visited {
   font-size: 18px;
 }
 
+/* Responsive Restaurants */
 @media screen and (max-width: 350px) {
   .Carte_Restaurants {
     width: 300px;
@@ -373,6 +390,23 @@ a:visited {
   }
   .Carte_Restaurants_Coeur {
     margin-left: 250px;
+  }
+}
+
+@media (max-width: 414px) {
+  .Fonctionnement_Card {
+    margin: 2% auto 2% auto;
+    width: 90%;
+  }
+  .Carte_Restaurants {
+    width: 90%;
+    margin: 5% auto 5% auto;
+  }
+  .Carte_Restaurants_Coeur {
+    margin-left: 75%;
+  }
+  .Carte_Restaurants_Popup {
+    margin-left: 67%;
   }
 }
 
@@ -511,10 +545,10 @@ a:visited {
   }
 }
 
-.header_Background {
+.header_Arrow {
   position: absolute;
-  z-index: -1;
-  width: 100%;
+  left: 2px;
+  color: black;
 }
 
 .header_texte {
@@ -523,10 +557,10 @@ a:visited {
   margin-left: 4rem;
 }
 
-.header_Arrow {
+.header_Background {
   position: absolute;
-  left: 2px;
-  color: black;
+  z-index: -1;
+  width: 100%;
 }
 
 .Menus {
@@ -552,12 +586,6 @@ a:visited {
 
 .Menus_Coeur {
   font-size: 1.3rem;
-}
-
-@media screen and (min-width: 1366px) {
-  .Menus {
-    margin-top: 700px;
-  }
 }
 
 .Card {
@@ -603,24 +631,6 @@ a:visited {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-@media screen and (max-width: 375px) {
-  .Card p {
-    font-size: 13px;
-  }
-  .Card_bold {
-    font-size: 17px;
-  }
-  .Card_prix {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .Card {
-    width: 93%;
-  }
 }
 
 .Card_TitrePlats {
@@ -708,6 +718,25 @@ a:visited {
   to {
     opacity: 1;
     width: 100px;
+  }
+}
+
+/* Responsive Card */
+@media screen and (max-width: 375px) {
+  .Card p {
+    font-size: 13px;
+  }
+  .Card_bold {
+    font-size: 17px;
+  }
+  .Card_prix {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Card {
+    width: 93%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

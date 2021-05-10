@@ -3,6 +3,9 @@ $couleur_primaire:#9356DC;
 $couleur_secondaire:#FF79DA;
 $couleur_Tertiaire:#99E2D0;
 $couleur_TertiaireSombre:#139273;
+
+/*Réglages de base */
+
 body {
     margin: 0;
     padding: 0;
@@ -20,8 +23,13 @@ a {
 a:visited {
     color: black;
 }
+
 /***** Loading Spinner *****/
+
 #loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     text-align: center;
     z-index: 3;
@@ -38,45 +46,13 @@ a:visited {
         border-top-color: #ffff;
         animation: spin 1s ease-in-out infinite;
     }
-}
-#loading_Titre {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    margin-left: 2rem;
-    margin-top: 5rem;
-}
-#loading_Circle {
-    text-align: center;
-    margin-top: 3rem;
-}
-#loading_Circle > div{
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #ffff;
-    border-radius: 50%;
-    display: inline-block;
-    animation: circle 1.5s infinite ease-in-out both;
-}
-@media screen and (max-width:400px) {
-    #loading_Titre {
-        font-size: 1.5rem;
+    &_Circle {
+        padding-top: 2rem;
     }
-    #loading_Circle {
-        font-size: 1.5rem;
+    &_Titre {
+        color: white;
+        font-size: 2rem;
     }
-    #loading {
-        &_Spinner {
-            width: 5rem;
-            height: 5rem;
-        }
-    }
-}
-#loading_Circle #Circle1 {
-    animation-delay: -0.30s;
-}
-#loading_Circle #Circle2 {
-    animation-delay: -0.15s;
 }
 @keyframes loading {
     to {
@@ -96,26 +72,40 @@ a:visited {
         transform: scale(1);
     }
 }
-@media (max-width:1440px) {
+#loading_Circle > div{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ffff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: circle 1.5s infinite ease-in-out both;
+}
+#loading_Circle #Circle1 {
+    animation-delay: -0.30s;
+}
+#loading_Circle #Circle2 {
+    animation-delay: -0.15s;
+}
+
+/* Responsive Loading Spinner */
+
+@media screen and (max-width:400px) {
+    #loading_Titre {
+        font-size: 1.5rem;
+    }
+    #loading_Circle {
+        font-size: 1.5rem;
+    }
     #loading {
         &_Spinner {
-            margin-left: 48%;
+            width: 5rem;
+            height: 5rem;
         }
     }
 }
-@media (max-width:1024px) {
-    #loading {
-        &_Spinner {
-            margin-left: 45%;
-        }
-    }
-}
-
-
-
-
 
 /******header *****/
+
 .OhMyFoodLogo {
     display: flex;
     justify-content: center;
@@ -154,7 +144,25 @@ a:visited {
     }
 }
 
+/* Responsive header background */
+
+@media (min-width:500px) {
+    .header_Background {
+        height:35%;
+        object-fit: cover;
+    }
+}
+@media (min-width:800px) {
+    .header_Background {
+        height: 40%;
+        object-fit: cover;
+    }
+    .Menus {
+        margin-top: 325px;
+    }
+}
 /***** Fonctionnement *****/
+
 .Fonctionnement {
     display: flex;
     flex-direction: column;
@@ -205,6 +213,7 @@ a:visited {
 
 
 /***** Restaurants *****/
+
 .Container_Carte_Restaurants {
     display: flex;
     justify-content: center;
@@ -259,6 +268,9 @@ a:visited {
     }
     
 }
+
+/* Responsive Restaurants */
+
 @media screen and (max-width:350px) {
     .Carte_Restaurants {
         width: 300px;
@@ -269,6 +281,22 @@ a:visited {
         &_Coeur {
             margin-left: 250px;
         }
+    }
+}
+@media (max-width:414px) {
+    .Fonctionnement_Card {
+        margin: 2% auto 2% auto;
+        width: 90%;
+    }
+    .Carte_Restaurants {
+        width: 90%;
+        margin: 5% auto 5% auto;
+    }
+    .Carte_Restaurants_Coeur {
+        margin-left: 75%;
+    }
+    .Carte_Restaurants_Popup {
+        margin-left: 67%;
     }
 }
 @media screen and (min-width:768px) {
@@ -294,6 +322,7 @@ a:visited {
 }
 
 /***** Footer *****/ 
+
 .Footer_Logo {
     filter: invert(100%)
 }
@@ -330,7 +359,9 @@ a:visited {
         padding-bottom: 1rem;
     }
 }
+
 /***** Pages *****/ 
+
 .Entrées, .Plats, .Desserts {
     animation: fadein 2s;
 }
@@ -356,20 +387,22 @@ a:visited {
         transform:translateY(0);
     }
 }
-.header_Background {
-   position: absolute;
-   z-index: -1;
-   width: 100%;
-}
-.header_texte {
-    text-align: center;
-    width: 250px;
-    margin-left: 4rem;
-}
-.header_Arrow {
-   position: absolute;
-   left: 2px;
-   color: black;
+.header {
+    &_Arrow {
+        position: absolute;
+        left: 2px;
+        color: black;
+    }
+    &_texte {
+        text-align: center;
+        width: 250px;
+        margin-left: 4rem;
+    }
+    &_Background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+     }
 }
 .Menus {
     z-index: 1;
@@ -387,11 +420,7 @@ a:visited {
         font-size: 1.3rem;
     }
 }
-@media screen and (min-width:1366px) {
-    .Menus {
-        margin-top: 700px;
-    }
-}
+
 .Card {
     display: flex;
     align-items: center;
@@ -427,25 +456,6 @@ a:visited {
        text-overflow: ellipsis;
     }
 }
-@media screen and (max-width:375px) {
-    .Card {
-        & p {
-            font-size: 13px;
-        }
-        &_bold {
-            font-size: 17px;
-        }
-        &_prix {
-            font-size: 16px;
-        }
-    }
-}
-@media screen and (min-width:768px) {
-    .Card {
-        width: 93%;
-    }
-}
-
 .Card_TitrePlats {
     margin-left: 1rem;
     border-bottom: solid 2px $couleur_Tertiaire;
@@ -499,4 +509,24 @@ a:visited {
       width: 100px;
     }
    
+}
+
+/* Responsive Card */
+@media screen and (max-width:375px) {
+    .Card {
+        & p {
+            font-size: 13px;
+        }
+        &_bold {
+            font-size: 17px;
+        }
+        &_prix {
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .Card {
+        width: 93%;
+    }
 }
