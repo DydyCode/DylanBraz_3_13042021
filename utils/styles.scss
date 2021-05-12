@@ -213,7 +213,7 @@ a:visited {
 .coeur-plein {
     opacity: 0;
     background: linear-gradient($couleur_primaire, #e295cc) ;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
     left: 0px;
