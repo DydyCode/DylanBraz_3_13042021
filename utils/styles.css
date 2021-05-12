@@ -663,8 +663,7 @@ a:visited {
 .Card_prix {
   font-weight: bold;
   font-size: 17px;
-  padding-top: 2rem;
-  padding-right: 2rem;
+  padding: 2rem 2rem 0 0.5rem;
 }
 
 .Card p {
