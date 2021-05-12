@@ -300,6 +300,28 @@ a:visited {
   color: #9356DC;
 }
 
+.coeur-plein {
+  opacity: 0;
+  color: #9356DC;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.coeurs-menus {
+  right: 40px;
+}
+
+.Carte_Restaurants_Coeur:hover:active > .coeur-vide {
+  opacity: 0;
+}
+
+.Carte_Restaurants_Coeur:hover:active > .coeur-plein {
+  opacity: 1;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
 /***** Restaurants *****/
 .Container_Carte_Restaurants {
   display: -webkit-box;
@@ -667,12 +689,12 @@ a:visited {
   font-size: 25px;
 }
 
-.Card:hover .Card_hidden {
+.Card:active .Card_hidden {
   -webkit-animation: hidden 1s;
           animation: hidden 1s;
 }
 
-.Card:hover .fa-check-circle {
+.Card:active .fa-check-circle {
   -webkit-animation: rotate 800ms;
           animation: rotate 800ms;
 }
