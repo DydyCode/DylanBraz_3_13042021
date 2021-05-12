@@ -4,6 +4,7 @@ $couleur_secondaire:#FF79DA;
 $couleur_Tertiaire:#99E2D0;
 $couleur_TertiaireSombre:#139273;
 
+
 /*Réglages de base */
 
 body {
@@ -440,7 +441,25 @@ a:visited {
         font-size: 1.3rem;
     }
 }
+/* Responsive menus */ 
 
+@media (max-width:375px) {
+    .Menus {
+    margin-top: 160px;
+    }
+}
+@media (max-width:330px) {
+   .Menus h2 {
+    font-size: 1.3rem;
+    }
+    .fa-heart {
+        font-size: 1.2rem;
+    }
+    .coeur-plein {
+        top: 3px;
+    }
+}
+/* Cartes */ 
 .Card {
     display: flex;
     align-items: center;
@@ -532,6 +551,11 @@ a:visited {
 }
 
 /* Responsive Card */
+@media (max-width:330px) {
+    .Carte_Restaurants_Texte {
+        font-size: 17px;
+    }
+}
 @media screen and (max-width:375px) {
     .Card {
         & p {
