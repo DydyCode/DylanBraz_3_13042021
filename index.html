@@ -13,7 +13,9 @@
     <title>Oh my food!</title>
 </head>
 <body>
+    <!-- Début du header -->
     <header>
+            <!-- Loading Spinner -->
             <div id="loading">
                 <p id="loading_Titre">Chargement en cours</p>
                 <div id="loading_Spinner"></div>
@@ -23,6 +25,7 @@
                     <div id="Circle3"></div>
                 </div>
             </div>
+            <!-- Header -->
             <div class="OhMyFoodLogo">
                 <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfoodlogo" id="OhMyFoodLogo">
             </div>
@@ -40,135 +43,185 @@
                     </div>
         </section>
     </header>
-        <section class="Fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="Fonctionnement_Card Fonctionnement_Card--Choix">
-                <div class="Fonctionnement_Card--circle">
-                    1
-                </div>
-                <div class="Fonctionnement_Card--fas">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="Fonctionnement_Card--texte">
-                    <p>Choisissez un restaurant</p>
-                </div>
-            </div>
-            <div class="Fonctionnement_Card Fonctionnement_Card--Menu">
-                <div class="Fonctionnement_Card--circle">
-                    2
-                </div>
-                <div class="Fonctionnement_Card--fas">
-                    <i class="fas fa-list"></i>
-                </div>
-                <div class="Fonctionnement_Card--texte">
-                    <p>Composez votre menu</p>
-                </div>
-            </div>
-            <div class="Fonctionnement_Card Fonctionnement_Card--Degustez">
-                <div class="Fonctionnement_Card--circle">
-                    3
-                </div>
-                <div class="Fonctionnement_Card--fas">
-                    <i class="fas fa-store"></i>
-                </div>
-                <div class="Fonctionnement_Card--texte">
-                    <p>Dégustez au restaurant</p>
-                </div>
-            </div>
-        </section>
-        <h2 class="Container_Carte_Restaurants_h2">Restaurants</h2>
-        <section class="Container_Carte_Restaurants">
-            <div class="Carte_Restaurants">
-                <img src="images/restaurants/La_palette_du_gout.jpg" class="Carte_Restaurants_Photo La_palette_du_gout" alt="La_palette_du_gout">
-                    <div class="Carte_Restaurants_Popup">
-                        Nouveau
-                    </div>
-                        <div class="Carte_Restaurants_TexteSousImage">
-                            <div class="Carte_Restaurants_Texte">
+            <!-- Début de la section "Fonctionnement" -->
+            <section class="Fonctionnement">
+                <h2>
+                    Fonctionnement
+                </h2>
+                    <!-- Début des Cards fonctionnement  -->
+                        <!-- Card "Choisisssez un restaurant" -->
+                    <div class="Fonctionnement_Card Fonctionnement_Card--Choix">
+                        <div class="Fonctionnement_Card--circle">
+                            1
+                        </div>
+                        <div class="Fonctionnement_Card--fas">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                            <div class="Fonctionnement_Card--texte">
                                 <p>
-                                        <a href="Pages/La palette du goût.html">
-                                            <span class="Carte_Restaurants_bold">La palette du goût</span>
+                                    Choisissez un restaurant
+                                </p>
+                            </div>
+                    </div>
+                        <!-- Card "Composez votre menu" -->
+                        <div class="Fonctionnement_Card Fonctionnement_Card--Menu">
+                            <div class="Fonctionnement_Card--circle">
+                                2
+                            </div>
+                                <div class="Fonctionnement_Card--fas">
+                                    <i class="fas fa-list"></i>
+                                </div>
+                                    <div class="Fonctionnement_Card--texte">
+                                        <p>
+                                            Composez votre menu
+                                        </p>
+                                    </div>
+                        </div>
+                            <!-- Card "Dégustez au restaurant" -->
+                            <div class="Fonctionnement_Card Fonctionnement_Card--Degustez">
+                                <div class="Fonctionnement_Card--circle">
+                                    3
+                                </div>
+                                    <div class="Fonctionnement_Card--fas">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                        <div class="Fonctionnement_Card--texte">
+                                            <p>
+                                                Dégustez au restaurant
+                                            </p>
+                                        </div>
+                            </div>
+            </section>
+
+            <!-- Début du container "Restaurants" -->
+
+            <h2 class="Container_Carte_Restaurants_h2">Restaurants</h2>
+                <section class="Container_Carte_Restaurants">
+
+                    <!-- Card "La palette du goût" -->
+                    <div class="Carte_Restaurants">
+                        <img src="images/restaurants/La_palette_du_gout.jpg" class="Carte_Restaurants_Photo La_palette_du_gout" alt="La_palette_du_gout">
+                            <div class="Carte_Restaurants_Popup">
+                                Nouveau
+                            </div>
+                                <div class="Carte_Restaurants_TexteSousImage">
+                                    <div class="Carte_Restaurants_Texte">
+                                        <p>
+                                            <a href="Pages/La palette du goût.html">
+                                                <span class="Carte_Restaurants_bold">La palette du goût</span>
+                                            </a>
+                                                <br>Ménilmontant
+                                        </p>
+                                    </div> 
+                                        <div class="Carte_Restaurants_Coeur">
+                                            <i class="far fa-heart coeur-vide"></i>
+                                            <i class="fa fa-heart coeur-plein"></i>
+                                        </div>
+                                </div>
+                    </div>
+
+                    <!-- Card "La note enchantée" -->
+                    <div class="Carte_Restaurants">
+                        <a href="#"></a>
+                            <img src="images/restaurants/La_note_enchante.jpg" class="Carte_Restaurants_Photo La_note_enchantée" alt="La note enchantée">
+                                <div class="Carte_Restaurants_Popup">
+                                    Nouveau
+                                </div>
+                                    <div class="Carte_Restaurants_TexteSousImage">
+                                        <div class="Carte_Restaurants_Texte">
+                                            <p>
+                                                <a href="Pages/La note enchantée.html">
+                                                    <span class="Carte_Restaurants_bold">La note enchantée</span>
+                                                </a>
+                                                    <br>Charonne
+                                            </p>
+                                        </div> 
+                                                <div class="Carte_Restaurants_Coeur">
+                                                    <i class="far fa-heart coeur-vide"></i>
+                                                    <i class="fa fa-heart coeur-plein"></i>
+                                                </div>
+                                    </div>
+                    </div>
+
+                    <!-- Card "A la Française" -->
+                    <div class="Carte_Restaurants">
+                        <img src="images/restaurants/A_la_francaise.jpg" class="Carte_Restaurants_Photo " alt="A la Française">
+                            <div class="Carte_Restaurants_TexteSousImage">
+                                <div class="Carte_Restaurants_Texte">
+                                    <p>
+                                        <a href="Pages/A la française.html">
+                                        <span class="Carte_Restaurants_bold">A la Française</span></a>
+                                        <br>Cité rouge
+                                    </p>
+                                </div> 
+                                    <div class="Carte_Restaurants_Coeur">
+                                        <i class="far fa-heart coeur-vide"></i>
+                                        <i class="fa fa-heart coeur-plein"></i>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <!-- Card "Le délice des sens" -->
+                    <div class="Carte_Restaurants">
+                        <a href="#"></a>
+                        <img src="images/restaurants/le_delice_des_sens.jpg" class="Carte_Restaurants_Photo le_delice_des_sens" alt="le_delice_des_sens">
+                            <div class="Carte_Restaurants_TexteSousImage">
+                                <div class="Carte_Restaurants_Texte">
+                                    <p>
+                                        <a href="Pages/Le délice des sens.html">
+                                            <span class="Carte_Restaurants_bold">Le délice des sens</span>
                                         </a>
-                                    <br>Ménilmontant
-                                </p>
-                            </div> 
-                            <div class="Carte_Restaurants_Coeur">
-                                <i class="far fa-heart coeur-vide"></i>
-                                <i class="fa fa-heart coeur-plein"></i>
+                                        <br>Folie-Méricourt
+                                    </p>
+                                </div> 
+                                    <div class="Carte_Restaurants_Coeur">
+                                        <i class="far fa-heart coeur-vide"></i>
+                                        <i class="fa fa-heart coeur-plein"></i>
+                                    </div>
                             </div>
-                        </div>
-            </div>
-            <div class="Carte_Restaurants">
-                <a href="#"></a>
-                <img src="images/restaurants/La_note_enchante.jpg" class="Carte_Restaurants_Photo La_note_enchantée" alt="La note enchantée">
-                    <div class="Carte_Restaurants_Popup">
-                        Nouveau
                     </div>
-                        <div class="Carte_Restaurants_TexteSousImage">
-                            <div class="Carte_Restaurants_Texte">
-                                <p>
-                                    <a href="Pages/La note enchantée.html">
-                                        <span class="Carte_Restaurants_bold">La note enchantée</span>
-                                    </a>
-                                    <br>Charonne
-                                </p>
-                            </div> 
-                            <div class="Carte_Restaurants_Coeur">
-                                <i class="far fa-heart coeur-vide"></i>
-                                <i class="fa fa-heart coeur-plein"></i>
-                            </div>
-                        </div>
-            </div>
-            <div class="Carte_Restaurants">
-                <img src="images/restaurants/A_la_francaise.jpg" class="Carte_Restaurants_Photo " alt="A la Française">
-                        <div class="Carte_Restaurants_TexteSousImage">
-                            <div class="Carte_Restaurants_Texte">
-                                <p>
-                                    <a href="Pages/A la française.html">
-                                    <span class="Carte_Restaurants_bold">A la Française</span></a>
-                                    <br>Cité rouge
-                                </p>
-                            </div> 
-                            <div class="Carte_Restaurants_Coeur">
-                                <i class="far fa-heart coeur-vide"></i>
-                                <i class="fa fa-heart coeur-plein"></i>
-                            </div>
-                        </div>
-            </div>
-            <div class="Carte_Restaurants">
-                <a href="#"></a>
-                <img src="images/restaurants/le_delice_des_sens.jpg" class="Carte_Restaurants_Photo le_delice_des_sens" alt="le_delice_des_sens">
-                        <div class="Carte_Restaurants_TexteSousImage">
-                            <div class="Carte_Restaurants_Texte">
-                                <p>
-                                    <a href="Pages/Le délice des sens.html">
-                                        <span class="Carte_Restaurants_bold">Le délice des sens</span>
-                                    </a>
-                                    <br>Folie-Méricourt
-                                </p>
-                            </div> 
-                            <div class="Carte_Restaurants_Coeur">
-                                <i class="far fa-heart coeur-vide"></i>
-                                <i class="fa fa-heart coeur-plein"></i>
-                            </div>
-                        </div>
-            </div>
-        </section>
+
+                </section>
+
+                <!-- Début du footer -->
         <footer>
             <section class="Footer">
                 <img src="images/logo/ohmyfood.png" class="Footer_Logo" alt="logo" width="120">
-                <div class="Footer_Couverts">
-                    <i class="fa fa-utensils"></i>
-                    <a href="#"><p>Proposer un restaurant</p></a>
-                </div>
-                <div class="Footer_Partenaire">
-                    <i class="fa fa-hands-helping"></i>
-                    <a href="#"><p>Devenir partenaire</p></a>
-                </div>
-                <div class="Footer_TexteBas">
-                    <a href="#"><p>Mention légales</p></a>
-                    <a href="mailto:dydycode74@gmail.com"><p>Contact</p></a>
-                </div>
+                    <!-- Couverts -->
+                    <div class="Footer_Couverts">
+                        <i class="fa fa-utensils"></i>
+                            <a href="#">
+                                <p>
+                                    Proposer un restaurant
+                                </p>
+                            </a>
+                    </div>
+
+                    <!-- Partenaire -->
+                    <div class="Footer_Partenaire">
+                        <i class="fa fa-hands-helping"></i>
+                        <a href="#">
+                            <p>
+                                Devenir partenaire
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Mention légales -->
+                    <div class="Footer_TexteBas">
+                        <a href="#">
+                            <p>
+                                Mention légales
+                            </p>
+                        </a>
+                        <!-- Contact -->
+                        
+                    <a href="mailto:dydycode74@gmail.com">
+                        <p>
+                            Contact
+                        </p>
+                    </a>
+                    </div>
             </section>
         </footer>
 </body>
