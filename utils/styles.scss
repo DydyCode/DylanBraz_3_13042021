@@ -375,6 +375,9 @@ a:visited {
 .Footer_Logo {
     filter: invert(100%)
 }
+.fa-utensils, .fa-hands-helping {
+    padding-right: 10px;
+}
 .Footer {
     padding-left: 1rem;
     background-color: #353535;
@@ -409,6 +412,12 @@ a:visited {
     }
 }
 
+/* Responsive footer */ 
+@media (min-width:1146px) {
+    .Footer p {
+        padding-left:0px;
+    }
+}
 /***** Pages *****/ 
 
 .Entrées, .Plats, .Desserts {
