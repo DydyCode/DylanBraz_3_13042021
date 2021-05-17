@@ -253,6 +253,11 @@ a:visited {
     .Fonctionnement_Card {
             margin: 3rem 1rem 3rem 2rem;
     }
+    /* Disparition fléche retour */ 
+
+    .header_Arrow {
+        display: none;
+    }
 }
 
 /***** Restaurants *****/
@@ -572,6 +577,27 @@ a:visited {
 }
 
 /* Responsive Card */
+
+@media (min-width:700px) {
+    .Card {
+        width: 500px;
+        margin-top: 2rem;
+    }
+    #ContainerMenus {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width:1146px) {
+    .Card {
+        width: 350px;
+    }
+    .Menus {
+        margin-top: 180px;
+    }
+}
+
 @media (max-width:330px) {
     .Carte_Restaurants_Texte {
         font-size: 17px;
@@ -586,15 +612,10 @@ a:visited {
             font-size: 17px;
         }
         &_prix {
-            font-size: 16px;
+            font-size: 15px;
         }
     }     
  
-}
-@media (min-width:768px) {
-    .Card {
-        width: 93%;
-    }
 }
 .Commande {
         &_btn {
