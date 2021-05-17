@@ -324,8 +324,8 @@ a:visited {
 
 .Carte_Restaurants_Coeur:hover:hover > .coeur-plein {
   opacity: 1;
-  -webkit-transition: 500ms ease-in-out;
-  transition: 500ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .fa-arrow-right {
