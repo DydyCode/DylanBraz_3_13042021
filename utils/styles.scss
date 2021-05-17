@@ -238,6 +238,23 @@ a:visited {
     }
 }
 
+.fa-arrow-right {
+    font-size: 30px;
+}
+
+/* Fonctionnement responsive */ 
+
+@media (min-width:1146px) {
+    .Fonctionnement {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .Fonctionnement_Card {
+            margin: 3rem 1rem 3rem 2rem;
+    }
+}
+
 /***** Restaurants *****/
 
 .Container_Carte_Restaurants {
