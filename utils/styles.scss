@@ -36,7 +36,7 @@ a:visited {
     text-align: center;
     z-index: 3;
     background-color: $couleur_primaire;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     cursor:wait;
     animation: loading 2s forwards;
@@ -244,7 +244,7 @@ a:visited {
 
 /* Fonctionnement responsive */ 
 
-@media (min-width:1146px) {
+@media (min-width:1147px) {
     .Fonctionnement {
         flex-direction: row;
         align-items: center;
@@ -260,6 +260,13 @@ a:visited {
     }
 }
 
+/* Disparition arrow fonctionnement */
+
+@media (max-width:1146px) {
+    .ArrowRight {
+        display: none;
+    }
+}
 /***** Restaurants *****/
 
 .Container_Carte_Restaurants {
@@ -462,6 +469,7 @@ a:visited {
         width: 100%;
      }
 }
+
 .Menus {
     z-index: 1;
     background-color: #f6f6f6;
@@ -496,7 +504,9 @@ a:visited {
         top: 3px;
     }
 }
-/* Cartes */ 
+
+/* Card */ 
+
 .Card {
     display: flex;
     align-items: center;
@@ -587,6 +597,15 @@ a:visited {
 
 /* Responsive Card */
 
+@media (min-width:1146px) {
+    .Card {
+        width: 350px;
+    }
+    .Menus {
+        margin-top: 180px;
+    }
+}
+
 @media (min-width:700px) {
     .Card {
         width: 500px;
@@ -598,15 +617,6 @@ a:visited {
         flex-wrap: wrap;
     }
 }
-@media (min-width:1146px) {
-    .Card {
-        width: 350px;
-    }
-    .Menus {
-        margin-top: 180px;
-    }
-}
-
 @media (max-width:330px) {
     .Carte_Restaurants_Texte {
         font-size: 17px;
