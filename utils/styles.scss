@@ -11,15 +11,9 @@ body {
     background-color: #f6f6f6;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    animation: overflow 7s forwards;
     font-family: 'Roboto';
 }
-@keyframes overflow {
-    to {
-        overflow : visible;
-    }
-}
+
 h2 {
     font-weight: bold;
 }
@@ -34,6 +28,20 @@ a:visited {
 }
 
 /***** Loading Spinner *****/
+.main {
+    animation: main 2s forwards;
+}
+@keyframes main {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 #loading {
     display: flex;
@@ -42,24 +50,21 @@ a:visited {
     position: absolute;
     text-align: center;
     z-index: 3;
-    background-color: $couleur_primaire;
+    background-color: #f5f5f5;
     height: 100%;
     width: 100%;
     cursor:wait;
     animation: loading 2s forwards;
     &_Spinner {
-        border: 3px solid rgb(143, 143, 143);
+        border: 3px solid $couleur_primaire;
         border-radius: 50%;
         width: 7rem;
         height: 7rem;
         border-top-color: #ffff;
         animation: spin 1s ease-in-out infinite;
     }
-    &_Circle {
-        padding-top: 2rem;
-    }
     &_Titre {
-        color: white;
+        color: $couleur_primaire;
         font-size: 2rem;
     }
 }
@@ -586,10 +591,10 @@ a:visited {
 .Card {
     &:hover {
         & .Card_hidden {
-            animation: hidden 1s;
+            animation: hidden 1s forwards;
         }
         & .fa-check-circle {
-            animation: rotate 800ms;
+            animation: rotate 800ms ;
         }
     }
 }
