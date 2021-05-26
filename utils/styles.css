@@ -310,11 +310,11 @@ a:visited {
   font-size: 22px;
 }
 
-.Carte_Restaurants_Coeur:active:active > .coeur-vide {
+.Carte_Restaurants_Coeur:hover:hover > .coeur-vide {
   opacity: 0;
 }
 
-.Carte_Restaurants_Coeur:active:active > .coeur-plein {
+.Carte_Restaurants_Coeur:hover:hover > .coeur-plein {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;

@@ -229,8 +229,8 @@ a:visited {
     right: 0;
     font-size: 22px;
 }
-.Carte_Restaurants_Coeur:active {
-    &:active{
+.Carte_Restaurants_Coeur:hover {
+    &:hover{
         & > .coeur-vide {
             opacity: 0;
         }
