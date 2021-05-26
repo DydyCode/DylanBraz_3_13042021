@@ -298,6 +298,7 @@ a:visited {
   -webkit-text-fill-color: transparent;
   position: relative;
   left: -30px;
+  font-size: 22px;
 }
 
 .coeur-vide {
@@ -306,10 +307,7 @@ a:visited {
   right: 0;
   left: 0;
   right: 0;
-}
-
-.coeurs-menus {
-  right: 40px;
+  font-size: 22px;
 }
 
 .Carte_Restaurants_Coeur:active:active > .coeur-vide {
@@ -318,8 +316,8 @@ a:visited {
 
 .Carte_Restaurants_Coeur:active:active > .coeur-plein {
   opacity: 1;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .fa-arrow-right {
@@ -393,9 +391,7 @@ a:visited {
 }
 
 .Carte_Restaurants_Photo {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 170px;
+  height: 190px;
   width: 100%;
 }
 
@@ -408,12 +404,13 @@ a:visited {
           align-items: center;
   background-color: white;
   padding-left: 1rem;
+  margin-top: -5px;
 }
 
 .Carte_Restaurants_Coeur {
   position: absolute;
   margin-left: 300px;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 .Carte_Restaurants_Popup {
@@ -434,7 +431,7 @@ a:visited {
 }
 
 .Carte_Restaurants_Texte {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Responsive Restaurants */
@@ -653,21 +650,22 @@ a:visited {
 }
 
 /* Responsive menus */
-@media (max-width: 375px) {
-  .Menus {
-    margin-top: 160px;
+@media (max-width: 768px) {
+  .Carte_Restaurants_Coeur {
+    right: 30px;
+    font-size: 20px;
+  }
+  .Menus_Titre h1 {
+    font-size: 20px;
+  }
+  .coeur-plein {
+    left: -25px;
   }
 }
 
-@media (max-width: 330px) {
-  .Menus h2 {
-    font-size: 1.3rem;
-  }
-  .fa-heart {
-    font-size: 1.4rem;
-  }
-  .coeur-plein {
-    top: 3px;
+@media (max-width: 375px) {
+  .Menus {
+    margin-top: 160px;
   }
 }
 
@@ -820,8 +818,11 @@ a:visited {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .Carte_Restaurants_Texte {
+    font-size: 14px;
+  }
+  .coeur-plein, .coeur-vide {
     font-size: 17px;
   }
 }
