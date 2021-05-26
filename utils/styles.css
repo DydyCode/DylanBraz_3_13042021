@@ -395,6 +395,7 @@ a:visited {
 .Carte_Restaurants_Photo {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 170px;
   width: 350px;
 }
 
