@@ -40,7 +40,7 @@ a:visited {
   text-align: center;
   z-index: 3;
   background-color: #9356DC;
-  height: 100%;
+  height: 100vw;
   width: 100%;
   cursor: wait;
   -webkit-animation: loading 2s forwards;
@@ -311,21 +311,31 @@ a:visited {
   -webkit-text-fill-color: transparent;
   position: absolute;
   left: 0px;
+  right: 0px;
   top: 0px;
+  bottom: 0px;
+}
+
+.coeur-vide {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
 }
 
 .coeurs-menus {
   right: 40px;
 }
 
-.Carte_Restaurants_Coeur:hover:hover > .coeur-vide {
+.Carte_Restaurants_Coeur:active:active > .coeur-vide {
   opacity: 0;
 }
 
-.Carte_Restaurants_Coeur:hover:hover > .coeur-plein {
+.Carte_Restaurants_Coeur:active:active > .coeur-plein {
   opacity: 1;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .fa-arrow-right {
