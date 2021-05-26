@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a2454d2561.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <title>A la Française</title>
+    <title>Le délice des sens</title>
 </head>
 <body>
 
@@ -27,13 +27,13 @@
     <img src="../images/restaurants/La_palette_du_gout.jpg" class="header_Background" width="375" alt="A la française">
     
     <!-- Début des menus -->
-    <section class="Menus">
+    <div class="Menus">
 
          <!-- Titre du menu -->
         <div class="Menus_Titre">
-            <h2>
+            <h1>
                 Le délice des sens
-            </h2>
+            </h1>
                 <div class="Carte_Restaurants_Coeur coeurs-menus">
                     <i class="far fa-heart coeur-vide"></i>
                     <i class="fa fa-heart coeur-plein"></i>
@@ -42,7 +42,7 @@
         <div id="ContainerMenus">
 
             <!-- Les entrées -->
-        <article class="Entrées">
+        <div class="Entrées">
             <p class="Card_Titre">
                 Entrées
             </p>
@@ -53,9 +53,7 @@
                         Assaisonné au yuzu
                     </p>
                     <span class="Card_prix">
-                        <p>
                             25€
-                        </p>
                     </span>
                     <div class="Card_hidden">
                         <i class="fas fa-check-circle"></i>
@@ -91,10 +89,10 @@
                         <i class="fas fa-check-circle"></i>
                     </div>
             </div>
-        </article>
+        </div>
 
          <!-- Les Plats -->
-        <article class="Plats">
+        <div class="Plats">
             <p class="Card_Titre">
                 Plats
             </p>
@@ -145,8 +143,8 @@
             </div>
 
             <!-- Les Desserts -->
-        </article>
-        <article class="Desserts">
+        </div>
+        <div class="Desserts">
             <p class="Card_Titre">
                 Desserts
             </p>
@@ -196,47 +194,52 @@
                 </div>
             </div>
         </div>
-        </article>
+        </div>
 
         <!-- Bouton Commander -->
         <div class="Commande">
             <div class="Commande_btn">Commander</div>
         </div>
-    </section>
+    </div>
 
     <!-- Début du footer -->
     <footer>
-        <section class="Footer">
-            <img src="../images/logo/ohmyfood.png" class="Footer_Logo" alt="logo" width="120">
+        <div class="Footer">
+            <img src="/images/logo/ohmyfood.png" class="Footer_Logo" alt="logo" width="120">
+            <!-- Couverts -->
             <div class="Footer_Couverts">
                 <i class="fa fa-utensils"></i>
                 <a href="#">
-                    <p>
+                    <p class="pAvecIcons">
                         Proposer un restaurant
                     </p>
                 </a>
             </div>
+
+            <!-- Partenaire -->
             <div class="Footer_Partenaire">
                 <i class="fa fa-hands-helping"></i>
                 <a href="#">
-                    <p>
+                    <p class="pAvecIcons">
                         Devenir partenaire
                     </p>
                 </a>
             </div>
+            <!-- Mention légales -->
             <div class="Footer_TexteBas">
                 <a href="#">
-                    <p>
+                    <p class="pSansIcons">
                         Mention légales
                     </p>
                 </a>
+                <!-- Contact -->
                 <a href="mailto:dydycode74@gmail.com">
-                    <p>
+                    <p class="pSansIcons">
                         Contact
                     </p>
                 </a>
             </div>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
