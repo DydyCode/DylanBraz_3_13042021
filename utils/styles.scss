@@ -398,21 +398,31 @@ img {
     color: white;
     & a {
         color: white;
+        display: block;
+        padding-bottom: 0.5rem;
     }
     &_Couverts {
         display: flex;
         align-items: center;
+        padding-left: 1rem;
+        padding-top: 1rem;
     }
     &_Partenaire {
         display: flex;
         align-items: center;
+        padding-left: 1rem;
+
     }
     &_Logo {
         padding-top: 1rem;
         color: white;
+        padding-left: 1rem;
+
     }
     &_TexteBas {
         padding-bottom: 1rem;
+        padding-left: 1rem;
+
     }
 }
 .pAvecIcons {

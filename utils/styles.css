@@ -511,6 +511,8 @@ img {
 
 .Footer a {
   color: white;
+  display: block;
+  padding-bottom: 0.5rem;
 }
 
 .Footer_Couverts {
@@ -520,6 +522,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .Footer_Partenaire {
@@ -529,15 +533,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 1rem;
 }
 
 .Footer_Logo {
   padding-top: 1rem;
   color: white;
+  padding-left: 1rem;
 }
 
 .Footer_TexteBas {
   padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .pAvecIcons {
