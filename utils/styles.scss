@@ -29,9 +29,6 @@ a {
 a:visited {
     color: black;
 }
-img {
-    object-fit: cover;
-}
 
 /***** Apparition de la page ****/
 
@@ -177,7 +174,7 @@ img {
     &_Card {
         display: flex;
         align-items: center;
-        background-color: $couleur_Background_card;
+        background-color: $couleur_Background;
         height: 60px;
         width: 300px;
         font-size: 1rem;
@@ -265,9 +262,6 @@ img {
     .header_Arrow {
         display: none;
     }
-    .Container_Carte_Restaurants_h2 {
-        padding-left: 6.8rem;
-    
 }
 
 /* Disparition arrow fonctionnement */
@@ -368,6 +362,9 @@ img {
 @media (min-width:768px) {
     .Carte_Restaurants {
         margin: 1rem;
+        &_Coeur {
+            position: relative;
+        }
     }
 }
 @media (min-width:1366px) {
@@ -504,16 +501,6 @@ img {
     }
     .coeur-plein {
         left: -25px;
-    }
-    .Fonctionnement h2 {
-        margin-left: 1rem;
-        align-self: start;
-        padding-left: 0.1rem;
-        font-size: 20px;
-    }
-    .Container_Carte_Restaurants_h2 {
-        padding-left: 1rem;
-        font-size: 20px;
     }
 }
 @media (max-width:375px) {

@@ -24,11 +24,6 @@ a:visited {
   color: black;
 }
 
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /***** Apparition de la page ****/
 .main {
   -webkit-animation: main 2s forwards;
@@ -250,7 +245,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f6f6f6;
+  background-color: #f5f5f5;
   height: 60px;
   width: 300px;
   font-size: 1rem;
@@ -474,6 +469,9 @@ img {
   .Carte_Restaurants {
     margin: 1rem;
   }
+  .Carte_Restaurants_Coeur {
+    position: relative;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -665,18 +663,6 @@ img {
   }
   .coeur-plein {
     left: -25px;
-  }
-  .Fonctionnement h2 {
-    margin-left: 1rem;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    padding-left: 0.1rem;
-    font-size: 20px;
-  }
-  .Container_Carte_Restaurants_h2 {
-    padding-left: 1rem;
-    font-size: 20px;
   }
 }
 
