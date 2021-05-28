@@ -29,6 +29,9 @@ a {
 a:visited {
     color: black;
 }
+img {
+    object-fit: cover;
+}
 
 /***** Apparition de la page ****/
 
@@ -362,9 +365,6 @@ a:visited {
 @media (min-width:768px) {
     .Carte_Restaurants {
         margin: 1rem;
-        &_Coeur {
-            position: relative;
-        }
     }
 }
 @media (min-width:1366px) {
@@ -489,11 +489,40 @@ a:visited {
         font-size: 1.3rem;
     }
 }
+.coeurs-menus:hover {
+    &:hover{
+        & > .coeur-menus-vide {
+            opacity: 0;
+        }
+        & > .coeur-menus-plein {
+            opacity: 1;
+            transition: 1s ;
+        }
+    }
+}
+.coeur-menus-vide {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+}
+.coeur-menus-plein {
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#e772da));
+    background: linear-gradient(#9356DC, #e772da);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -29px;
+    font-size: 25px;
+}
 /* Responsive menus */ 
 
 @media (max-width:768px) {
     .Carte_Restaurants_Coeur {
-        right: 30px;
         font-size: 20px;
     }
     .Menus_Titre h1 {
@@ -654,4 +683,15 @@ a:visited {
             cursor: pointer;
         }
         
+}
+@media (min-width:1300px) {
+    .header_Background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }   
+    .background_aLaFrancaise{
+        object-position: 10% 155%;
+    }
 }
