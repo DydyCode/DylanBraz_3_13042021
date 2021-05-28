@@ -169,7 +169,7 @@ img {
 .header_btn {
   background: -webkit-gradient(linear, left top, right bottom, from(#e772da), to(#9356DC));
   background: linear-gradient(to bottom right, #e772da, #9356DC);
-  width: 230px;
+  width: 250px;
   height: 50px;
   border-radius: 40px;
   color: white;
@@ -240,7 +240,7 @@ img {
 }
 
 .Fonctionnement h2 {
-  margin-right: 40%;
+  margin-left: 1rem;
 }
 
 .Fonctionnement_Card {
@@ -666,6 +666,18 @@ img {
   .coeur-plein {
     left: -25px;
   }
+  .Fonctionnement h2 {
+    margin-left: 1rem;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    padding-left: 0.1rem;
+    font-size: 20px;
+  }
+  .Container_Carte_Restaurants_h2 {
+    padding-left: 1rem;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -847,7 +859,7 @@ img {
 .Commande_btn {
   background: -webkit-gradient(linear, left top, right bottom, from(#e772da), to(#9356DC));
   background: linear-gradient(to bottom right, #e772da, #9356DC);
-  width: 190px;
+  width: 250px;
   height: 50px;
   border-radius: 40px;
   color: white;

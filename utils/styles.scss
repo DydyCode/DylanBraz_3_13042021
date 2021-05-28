@@ -123,7 +123,7 @@ img {
     }
     &_btn {
         background: linear-gradient(to bottom right, #e772da, #9356DC);
-        width: 230px;
+        width: 250px;
         height: 50px;
         border-radius: 40px;
         color: white;
@@ -172,7 +172,7 @@ img {
     flex-direction: column;
     align-items: center;
     & h2 {
-        margin-right: 40%;
+        margin-left: 1rem;
     }
     &_Card {
         display: flex;
@@ -265,6 +265,9 @@ img {
     .header_Arrow {
         display: none;
     }
+    .Container_Carte_Restaurants_h2 {
+        padding-left: 6.8rem;
+    
 }
 
 /* Disparition arrow fonctionnement */
@@ -502,6 +505,16 @@ img {
     .coeur-plein {
         left: -25px;
     }
+    .Fonctionnement h2 {
+        margin-left: 1rem;
+        align-self: start;
+        padding-left: 0.1rem;
+        font-size: 20px;
+    }
+    .Container_Carte_Restaurants_h2 {
+        padding-left: 1rem;
+        font-size: 20px;
+    }
 }
 @media (max-width:375px) {
     .Menus {
@@ -639,7 +652,7 @@ img {
 .Commande {
         &_btn {
             background: linear-gradient(to bottom right, #e772da, #9356DC);
-            width: 190px;
+            width: 250px;
             height: 50px;
             border-radius: 40px;
             color: white;
