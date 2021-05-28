@@ -279,7 +279,7 @@ img {
 .Container_Carte_Restaurants {
     display: flex;
     justify-content: center;
-    background-color: $couleur_Background;
+    background-color: white;
     flex-wrap: wrap;
     &_h2 {
         background-color: $couleur_Background;
@@ -407,6 +407,7 @@ img {
         padding-left: 1rem;
         padding-top: 1rem;
     }
+
     &_Partenaire {
         display: flex;
         align-items: center;
