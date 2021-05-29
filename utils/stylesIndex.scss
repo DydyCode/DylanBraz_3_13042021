@@ -203,6 +203,12 @@ $couleur_Background_sombre: #f6f6f6;
         margin: 3rem 1rem 3rem 2rem;
     }
 }
+@media (max-width:1147px) {
+     .Fonctionnement h2 {
+        align-self: start;
+        margin-left: 3rem;
+    }
+}
 
 /***** Disparition des flèches fonctionnement *****/
 
