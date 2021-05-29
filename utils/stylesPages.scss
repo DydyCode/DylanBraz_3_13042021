@@ -1,6 +1,28 @@
 $couleur_Tertiaire:#99E2D0;
 $couleur_Background_sombre: #f6f6f6;
 
+/***** Responsive tailles des polices *****/
+
+@media (max-width:414px){
+    .Card_bold, .Card_prix, p {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .coeur-menus-vide,.coeur-menus-plein {
+        font-size: 30px;
+    }
+}
+@media (min-width:768px){
+    .Card_bold, .Card_prix, p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+}
+
 /***** Animation au refresh de la page *****/
 
 @keyframes refresh {
@@ -52,7 +74,7 @@ $couleur_Background_sombre: #f6f6f6;
      }
 }
 
-/* Disparition fléche retour */ 
+/***** Disparition fléche retour *****/ 
 
 @media (min-width:1147px) {
     .header_Arrow {
@@ -62,6 +84,11 @@ $couleur_Background_sombre: #f6f6f6;
 
 /***** Responsive background *****/
 
+@media (max-width:1300px) {
+    #bakckgroundaLaFrancaise{
+        object-position: 10% 55%;
+    }
+}
 @media (min-width:1300px) {
     .header_Background {
         position: absolute;
@@ -69,7 +96,7 @@ $couleur_Background_sombre: #f6f6f6;
         width: 100%;
         height: 100%;
     }   
-    .background_aLaFrancaise{
+    #bakckgroundaLaFrancaise{
         object-position: 10% 155%;
     }
 }
@@ -92,6 +119,7 @@ $couleur_Background_sombre: #f6f6f6;
         font-size: 1.3rem;
     }
 }
+
 
 /* Responsive menus */ 
 
@@ -160,16 +188,13 @@ $couleur_Background_sombre: #f6f6f6;
     }
     &_bold {
         font-weight: bold;
-        font-size: 18px;
     }
     &_prix {
         font-weight: bold;
-        font-size: 17px;
         padding: 2rem 2rem 0 0.5rem;
     }
     & p {
        width: 100%;
-       font-size: 17px;
        white-space: nowrap;
        overflow:hidden;
        text-overflow: ellipsis;
@@ -194,28 +219,7 @@ $couleur_Background_sombre: #f6f6f6;
         flex-wrap: wrap;
     }
 }
-@media (max-width:350px) {
-    .Carte_Restaurants_Texte {
-        font-size: 14px;
-    }
-    .coeur-plein, .coeur-vide {
-        font-size: 17px;
-    }
-}
-@media (max-width:375px) {
-    .Card {
-        & p {
-            font-size: 13px;
-        }
-        &_bold {
-            font-size: 17px;
-        }
-        &_prix {
-            font-size: 15px;
-        }
-    }     
- 
-}
+
 
 /***** Check caché *****/
 

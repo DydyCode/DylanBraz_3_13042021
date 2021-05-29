@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***** Apparition de la page ****/
 .main {
   -webkit-animation: main 2s forwards;
@@ -92,7 +93,7 @@
   }
 }
 
-/* Responsive Loading Spinner */
+/***** Responsive Loading Spinner *****/
 @media (max-width: 400px) {
   #loading_Titre {
     font-size: 1.5rem;
@@ -173,7 +174,7 @@
           box-shadow: inset 0px 4px 5px -4px #646464;
 }
 
-/* Responsive header background */
+/***** Responsive header background *****/
 @media (min-width: 500px) {
   .header_Background {
     height: 25%;
@@ -265,41 +266,11 @@
   color: #9356DC;
 }
 
-.coeur-plein {
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#e772da));
-  background: linear-gradient(#9356DC, #e772da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  left: -30px;
-  font-size: 22px;
-}
-
-.coeur-vide {
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
-  right: 0;
-  font-size: 22px;
-}
-
-.Carte_Restaurants_Coeur:hover:hover > .coeur-vide {
-  opacity: 0;
-}
-
-.Carte_Restaurants_Coeur:hover:hover > .coeur-plein {
-  opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
 .fa-arrow-right {
   font-size: 30px;
 }
 
-/* Fonctionnement responsive */
+/***** Fonctionnement responsive *****/
 @media (min-width: 1147px) {
   .Fonctionnement {
     -webkit-box-orient: horizontal;
@@ -318,7 +289,7 @@
   }
 }
 
-/* Disparition arrow fonctionnement */
+/***** Disparition des flèches fonctionnement *****/
 @media (max-width: 1146px) {
   .ArrowRight {
     display: none;
@@ -377,6 +348,7 @@
   background-color: white;
   padding-left: 1rem;
   margin-top: -5px;
+  height: 100%;
 }
 
 .Carte_Restaurants_Coeur {
@@ -406,7 +378,38 @@
   font-size: 16px;
 }
 
-/* Responsive Restaurants */
+/***** Coeurs des cartes restaurants *****/
+.coeur-plein {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#e772da));
+  background: linear-gradient(#9356DC, #e772da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: -30px;
+  font-size: 22px;
+}
+
+.coeur-vide {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+}
+
+.Carte_Restaurants_Coeur:hover:hover > .coeur-vide {
+  opacity: 0;
+}
+
+.Carte_Restaurants_Coeur:hover:hover > .coeur-plein {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/***** Responsive cartes Restaurants *****/
 @media (max-width: 350px) {
   .Carte_Restaurants {
     width: 300px;

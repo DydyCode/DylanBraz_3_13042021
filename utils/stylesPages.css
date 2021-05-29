@@ -1,4 +1,26 @@
 @charset "UTF-8";
+/***** Responsive tailles des polices *****/
+@media (max-width: 414px) {
+  .Card_bold, .Card_prix, p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .coeur-menus-vide, .coeur-menus-plein {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Card_bold, .Card_prix, p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
 /***** Animation au refresh de la page *****/
 @-webkit-keyframes refresh {
   from {
@@ -83,7 +105,7 @@
   width: 100%;
 }
 
-/* Disparition fléche retour */
+/***** Disparition fléche retour *****/
 @media (min-width: 1147px) {
   .header_Arrow {
     display: none;
@@ -91,6 +113,13 @@
 }
 
 /***** Responsive background *****/
+@media (max-width: 1300px) {
+  #bakckgroundaLaFrancaise {
+    -o-object-position: 10% 55%;
+       object-position: 10% 55%;
+  }
+}
+
 @media (min-width: 1300px) {
   .header_Background {
     position: absolute;
@@ -98,7 +127,7 @@
     width: 100%;
     height: 100%;
   }
-  .background_aLaFrancaise {
+  #bakckgroundaLaFrancaise {
     -o-object-position: 10% 155%;
        object-position: 10% 155%;
   }
@@ -203,18 +232,15 @@
 
 .Card_bold {
   font-weight: bold;
-  font-size: 18px;
 }
 
 .Card_prix {
   font-weight: bold;
-  font-size: 17px;
   padding: 2rem 2rem 0 0.5rem;
 }
 
 .Card p {
   width: 100%;
-  font-size: 17px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -241,27 +267,6 @@
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 350px) {
-  .Carte_Restaurants_Texte {
-    font-size: 14px;
-  }
-  .coeur-plein, .coeur-vide {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 375px) {
-  .Card p {
-    font-size: 13px;
-  }
-  .Card_bold {
-    font-size: 17px;
-  }
-  .Card_prix {
-    font-size: 15px;
   }
 }
 
