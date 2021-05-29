@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../utils/styles.css">
-    <link rel="stylesheet" href="../utils/responsive.css">
+    <link rel="stylesheet" href="../utils/stylesPages.css">
+    <link rel="stylesheet" href="../utils/stylesCommun.css">
     <script src="https://kit.fontawesome.com/a2454d2561.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>La note enchantée</title>
 </head>
+
 <body>
 
     <!-- Début du header -->
@@ -24,44 +26,45 @@
             <img src="../images/logo/ohmyfood.png" width="160" alt="Logo" class="OhMyFoodLogoMenu">
         </div>
     </header>
-    <img src="../images/restaurants/La_note_enchante.jpg" id="backgroundLaNote" class="header_Background" width="375" alt="A la française">
-    
-    <!-- Début des menus -->
-    <section class="Menus">
+    <img src="../images/restaurants/La_note_enchante.jpg" id="backgroundLaNote" class="header_Background" width="375"
+        alt="A la française">
 
-         <!-- Titre du menu -->
+    <!-- Début des menus -->
+    <div class="Menus">
+
+        <!-- Titre du menu -->
         <div class="Menus_Titre">
             <h1>
                 La note enchantée
             </h1>
-                <div class="coeurs-menus">
-                    <i class="far fa-heart coeur-menus-vide"></i>
-                    <i class="fa fa-heart coeur-menus-plein"></i>
-                </div>
+            <div class="coeurs-menus">
+                <i class="far fa-heart coeur-menus-vide"></i>
+                <i class="fa fa-heart coeur-menus-plein"></i>
+            </div>
         </div>
         <div id="ContainerMenus">
 
             <!-- Les entrées -->
-        <div class="Entrées">
-            <p class="Card_Titre">
-                Entrées
-            </p>
+            <div class="Entrées">
+                <p class="Card_Titre">
+                    Entrées
+                </p>
                 <div class="Card">
-                        <p>
-                            <span class="Card_bold">
+                    <p>
+                        <span class="Card_bold">
                             Ravioles de foie gras
-                            </span>
-                            <br>
-                            Accompagnés de leur crème à la truffe
-                        </p>
+                        </span>
+                        <br>
+                        Accompagnés de leur crème à la truffe
+                    </p>
                     <span class="Card_prix">
                         25€
                     </span>
-                        <div class="Card_hidden">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
-            <div class="Card">
+                <div class="Card">
                     <p>
                         <span class="Card_bold">
                             Caviar osciètre
@@ -75,8 +78,8 @@
                     <div class="Card_hidden">
                         <i class="fas fa-check-circle"></i>
                     </div>
-            </div>
-            <div class="Card">
+                </div>
+                <div class="Card">
                     <p>
                         <span class="Card_bold">
                             Homard et espuma de potiron
@@ -90,8 +93,8 @@
                     <div class="Card_hidden">
                         <i class="fas fa-check-circle"></i>
                     </div>
-            </div>
-            <div class="Card">
+                </div>
+                <div class="Card">
                     <p>
                         <span class="Card_bold">
                             Foie gras de canard cuit entier
@@ -105,137 +108,136 @@
                     <div class="Card_hidden">
                         <i class="fas fa-check-circle"></i>
                     </div>
+                </div>
             </div>
-        </div>
 
-        <!-- Les Plats -->
-        <div class="Plats">
-            <p class="Card_Titre">
-                Plats
-            </p>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Noix de coquilles Saint-Jacques
-                    </span>
-                    <br>
-                    Sur lit de purée de céleri-rave
+            <!-- Les Plats -->
+            <div class="Plats">
+                <p class="Card_Titre">
+                    Plats
                 </p>
-                <span class="Card_prix">
-                    40€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Noix de coquilles Saint-Jacques
+                        </span>
+                        <br>
+                        Sur lit de purée de céleri-rave
+                    </p>
+                    <span class="Card_prix">
+                        40€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Parmentier de queue de boeuf
+                        </span>
+                        <br>
+                        À la truffe noire sur sa purée de panais
+                    </p>
+                    <span class="Card_prix">
+                        35€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Langoustine poêlée
+                        </span>
+                        <br>
+                        Purée de patate douce
+                    </p>
+                    <span class="Card_prix">
+                        35€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Mijoté de queue de boeuf
+                        </span>
+                        <br>
+                        Et riz sauvage aux zestes de citron
+                    </p>
+                    <span class="Card_prix">
+                        44€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Parmentier de queue de boeuf
-                    </span>
-                    <br>
-                    À la truffe noire sur sa purée de panais
-                </p>
-                <span class="Card_prix">
-                    35€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </div>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Langoustine poêlée
-                    </span>
-                    <br>
-                    Purée de patate douce
-                </p>
-                <span class="Card_prix">
-                    35€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </div>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Mijoté de queue de boeuf 
-                    </span>
-                    <br>
-                    Et riz sauvage aux zestes de citron
-                </p>
-                <span class="Card_prix">
-                    44€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </div>
-        </div>
 
-        <!-- Les Desserts -->
-        <div class="Desserts">
-            <p class="Card_Titre">
-                Desserts
-            </p>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Macaron noisette et chocolat
-                    </span>
-                    <br>
-                    Glace au caramel brun et sel de Guérande
+            <!-- Les Desserts -->
+            <div class="Desserts">
+                <p class="Card_Titre">
+                    Desserts
                 </p>
-                <span class="Card_prix">
-                    18€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Macaron noisette et chocolat
+                        </span>
+                        <br>
+                        Glace au caramel brun et sel de Guérande
+                    </p>
+                    <span class="Card_prix">
+                        18€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Baba au rhum revisité
+                        </span>
+                        <br>
+                        Avec son coulis de citron
+                    </p>
+                    <span class="Card_prix">
+                        22€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="Card">
+                    <p>
+                        <span class="Card_bold">
+                            Tarte au citron meringuée
+                        </span>
+                        <br>
+                        Déstructurée
+                    </p>
+                    <span class="Card_prix">
+                        23€
+                    </span>
+                    <div class="Card_hidden">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Baba au rhum revisité
-                    </span>
-                    <br>
-                    Avec son coulis de citron
-                </p>
-                <span class="Card_prix">
-                    22€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </div>
-            <div class="Card">
-                <p>
-                    <span class="Card_bold">
-                        Tarte au citron meringuée 
-                    </span>
-                    <br>
-                    Déstructurée
-                </p>
-                <span class="Card_prix">
-                    23€
-                </span>
-                <div class="Card_hidden">
-                    <i class="fas fa-check-circle"></i>
-                </div>
+            <!-- Bouton Commander -->
+            <div class="Commande">
+                <div class="Commande_btn">Commander</div>
             </div>
         </div>
-        </div>
+    </div>
 
-         <!-- Bouton Commander -->
-        <div class="Commande">
-            <div class="Commande_btn">Commander</div>
-        </div>
-    </section>
-
-     <!-- Début du footer -->
-     <footer>
+    <!-- Début du footer -->
+    <footer>
         <div class="main Footer">
             <img src="../images/logo/ohmyfood.png" class="Footer_Logo" alt="logo" width="120">
             <!-- Couverts -->
@@ -278,4 +280,5 @@
 
     </footer>
 </body>
+
 </html>

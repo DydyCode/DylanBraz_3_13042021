@@ -1,0 +1,293 @@
+$couleur_Tertiaire:#99E2D0;
+$couleur_Background_sombre: #f6f6f6;
+
+/***** Animation au refresh de la page *****/
+
+@keyframes refresh {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform:translateY(0);
+    }
+}
+.Entrées, .Plats, .Desserts {
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.Card {
+    animation: refresh 1s;
+}
+.Card:hover {
+    box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+}
+
+/***** Header *****/
+
+.header {
+    display: flex;
+    justify-content: center;
+    &_Arrow {
+        position: absolute;
+        left: 2px;
+        color: black;
+        font-size: 20px ;
+    }
+    &_texte {
+        text-align: center;
+        width: 250px;
+        margin-left: 4rem;
+    }
+    &_Background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+     }
+}
+
+/* Disparition fléche retour */ 
+
+@media (min-width:1147px) {
+    .header_Arrow {
+        display: none;
+    }
+}
+
+/***** Responsive background *****/
+
+@media (min-width:1300px) {
+    .header_Background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }   
+    .background_aLaFrancaise{
+        object-position: 10% 155%;
+    }
+}
+
+/****** Menus *****/
+
+.Menus {
+    z-index: 1;
+    background-color: $couleur_Background_sombre;
+    border-radius:40px 40px 0 0;
+    width: 100%;
+    margin-top: 210px;
+    &_Titre {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        margin: 2rem;
+    }
+    &_Coeur {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsive menus */ 
+
+@media (max-width:768px) {
+    .coeur-plein {
+        left: -25px;
+    }
+}
+@media (max-width:1300px){
+    .Menus {
+        margin-top: 160px;
+        }
+}
+
+/****** Coeurs *****/
+
+.coeurs-menus:hover {
+    &:hover{
+        & > .coeur-menus-vide {
+            opacity: 0;
+        }
+        & > .coeur-menus-plein {
+            opacity: 1;
+            transition: 1s ;
+        }
+    }
+}
+.coeur-menus-vide {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+}
+.coeur-menus-plein {
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#e772da));
+    background: linear-gradient(#9356DC, #e772da);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -29px;
+    font-size: 25px;
+}
+
+/* Card */ 
+
+.Card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 85%;
+    height: 70px;
+    margin: 3% auto 3% auto;
+    padding-left: 1rem;
+    border-radius: 13px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.31);
+    &_Titre {
+        margin-left: 1rem;
+        border-bottom: solid 2px $couleur_Tertiaire;
+        width: 50px;
+        text-transform: uppercase;
+    }
+    &_bold {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &_prix {
+        font-weight: bold;
+        font-size: 17px;
+        padding: 2rem 2rem 0 0.5rem;
+    }
+    & p {
+       width: 100%;
+       font-size: 17px;
+       white-space: nowrap;
+       overflow:hidden;
+       text-overflow: ellipsis;
+    }
+}
+.Card_TitrePlats {
+    margin-left: 1rem;
+    border-bottom: solid 2px $couleur_Tertiaire;
+    width: 40px;
+    text-transform: uppercase;
+}
+/* Responsive Card */
+
+@media (min-width:700px) {
+    .Card {
+        width: 400px;
+        margin-top: 2rem;
+    }
+    #ContainerMenus {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:350px) {
+    .Carte_Restaurants_Texte {
+        font-size: 14px;
+    }
+    .coeur-plein, .coeur-vide {
+        font-size: 17px;
+    }
+}
+@media (max-width:375px) {
+    .Card {
+        & p {
+            font-size: 13px;
+        }
+        &_bold {
+            font-size: 17px;
+        }
+        &_prix {
+            font-size: 15px;
+        }
+    }     
+ 
+}
+
+/***** Check caché *****/
+
+.fa-heart:hover {
+    cursor: pointer;
+}
+
+.Card_hidden {
+    background-color: $couleur_Tertiaire;
+    width: 0px;
+    height: 70px;
+    border-radius: 0 10px 10px 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-check-circle {
+    color: white;
+    font-size: 25px;
+}
+
+/***** Animation check *****/
+
+.Card {
+    &:hover {
+        & .Card_hidden {
+            animation: hidden 1s forwards;
+        }
+        & .fa-check-circle {
+            animation: rotate 800ms ;
+        }
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes hidden {
+    from {
+       opacity: 0;
+       width: 0px;
+    }
+    to {
+      opacity: 1;
+      width: 100px;
+    }
+   
+}
+
+/***** Boutton Commander *****/
+
+.Commande {
+        &_btn {
+            background: linear-gradient(to bottom right, #e772da, #9356DC);
+            width: 250px;
+            height: 50px;
+            border-radius: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+            margin: 8% auto 8% auto;
+        }
+        &_btn:hover {
+            box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+            cursor: pointer;
+        }
+        
+}

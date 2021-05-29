@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+/***** Réglages de base *****/
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.Menus_Titre h1 {
+  font-family: 'Shrikhand';
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/***** Footer *****/
+.Footer {
+  background-color: #353535;
+  color: white;
+}
+
+.Footer a {
+  color: white;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+.Footer_Couverts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.Footer_Partenaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+}
+
+.Footer_Logo {
+  padding-top: 1rem;
+  color: white;
+  padding-left: 1rem;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.Footer_TexteBas {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.fa-utensils {
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+/***** Responsive footer *****/
+@media (min-width: 1146px) {
+  .Footer p {
+    padding-left: 0px;
+  }
+}
+/*# sourceMappingURL=stylesCommun.css.map */

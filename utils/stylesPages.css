@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/***** Animation au refresh de la page *****/
+@-webkit-keyframes refresh {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes refresh {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.Entrées, .Plats, .Desserts {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Card {
+  -webkit-animation: refresh 1s;
+          animation: refresh 1s;
+}
+
+.Card:hover {
+  -webkit-box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+          box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+}
+
+/***** Header *****/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_Arrow {
+  position: absolute;
+  left: 2px;
+  color: black;
+  font-size: 20px;
+}
+
+.header_texte {
+  text-align: center;
+  width: 250px;
+  margin-left: 4rem;
+}
+
+.header_Background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+/* Disparition fléche retour */
+@media (min-width: 1147px) {
+  .header_Arrow {
+    display: none;
+  }
+}
+
+/***** Responsive background *****/
+@media (min-width: 1300px) {
+  .header_Background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  .background_aLaFrancaise {
+    -o-object-position: 10% 155%;
+       object-position: 10% 155%;
+  }
+}
+
+/****** Menus *****/
+.Menus {
+  z-index: 1;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  margin-top: 210px;
+}
+
+.Menus_Titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+}
+
+.Menus_Coeur {
+  font-size: 1.3rem;
+}
+
+/* Responsive menus */
+@media (max-width: 768px) {
+  .coeur-plein {
+    left: -25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .Menus {
+    margin-top: 160px;
+  }
+}
+
+/****** Coeurs *****/
+.coeurs-menus:hover:hover > .coeur-menus-vide {
+  opacity: 0;
+}
+
+.coeurs-menus:hover:hover > .coeur-menus-plein {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.coeur-menus-vide {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+}
+
+.coeur-menus-plein {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#e772da));
+  background: linear-gradient(#9356DC, #e772da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: -29px;
+  font-size: 25px;
+}
+
+/* Card */
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 85%;
+  height: 70px;
+  margin: 3% auto 3% auto;
+  padding-left: 1rem;
+  border-radius: 13px;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+          box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.31);
+}
+
+.Card_Titre {
+  margin-left: 1rem;
+  border-bottom: solid 2px #99E2D0;
+  width: 50px;
+  text-transform: uppercase;
+}
+
+.Card_bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Card_prix {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 2rem 2rem 0 0.5rem;
+}
+
+.Card p {
+  width: 100%;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Card_TitrePlats {
+  margin-left: 1rem;
+  border-bottom: solid 2px #99E2D0;
+  width: 40px;
+  text-transform: uppercase;
+}
+
+/* Responsive Card */
+@media (min-width: 700px) {
+  .Card {
+    width: 400px;
+    margin-top: 2rem;
+  }
+  #ContainerMenus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 350px) {
+  .Carte_Restaurants_Texte {
+    font-size: 14px;
+  }
+  .coeur-plein, .coeur-vide {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Card p {
+    font-size: 13px;
+  }
+  .Card_bold {
+    font-size: 17px;
+  }
+  .Card_prix {
+    font-size: 15px;
+  }
+}
+
+/***** Check caché *****/
+.fa-heart:hover {
+  cursor: pointer;
+}
+
+.Card_hidden {
+  background-color: #99E2D0;
+  width: 0px;
+  height: 70px;
+  border-radius: 0 10px 10px 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 25px;
+}
+
+/***** Animation check *****/
+.Card:hover .Card_hidden {
+  -webkit-animation: hidden 1s forwards;
+          animation: hidden 1s forwards;
+}
+
+.Card:hover .fa-check-circle {
+  -webkit-animation: rotate 800ms;
+          animation: rotate 800ms;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes hidden {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 100px;
+  }
+}
+
+@keyframes hidden {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 100px;
+  }
+}
+
+/***** Boutton Commander *****/
+.Commande_btn {
+  background: -webkit-gradient(linear, left top, right bottom, from(#e772da), to(#9356DC));
+  background: linear-gradient(to bottom right, #e772da, #9356DC);
+  width: 250px;
+  height: 50px;
+  border-radius: 40px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+  margin: 8% auto 8% auto;
+}
+
+.Commande_btn:hover {
+  -webkit-box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+          box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+  cursor: pointer;
+}
+/*# sourceMappingURL=stylesPages.css.map */

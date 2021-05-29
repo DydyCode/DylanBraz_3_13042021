@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+$couleur_Background_sombre: #f6f6f6;
+
+/***** Réglages de base *****/
+
+body {
+    background-color: $couleur_Background_sombre;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+h1 {
+    font-weight: bold;
+}
+.Menus_Titre h1{
+    font-family: 'Shrikhand';
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+img {
+    object-fit: cover;
+}
+
+/***** Footer *****/ 
+
+.Footer {
+    background-color: #353535;
+    color: white;
+    & a {
+        color: white;
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+    &_Couverts {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    &_Partenaire {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        
+    }
+    &_Logo {
+        padding-top: 1rem;
+        color: white;
+        padding-left: 1rem;
+        filter: invert(100%)
+    }
+    &_TexteBas {
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        
+    }
+}
+.fa-utensils {
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+/***** Responsive footer *****/ 
+
+@media (min-width:1146px) {
+    .Footer p {
+        padding-left:0px;
+    }
+}
