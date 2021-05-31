@@ -29,6 +29,10 @@ img {
      object-fit: cover;
 }
 
+p, h3 {
+  margin: 0;
+}
+
 /***** Footer *****/
 .Footer {
   background-color: #353535;

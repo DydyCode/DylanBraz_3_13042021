@@ -50,6 +50,7 @@
   cursor: wait;
   -webkit-animation: loading 2s forwards;
           animation: loading 2s forwards;
+  position: fixed;
 }
 
 #loading_Spinner {
@@ -395,7 +396,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  left: -30px;
+  left: -29px;
   font-size: 22px;
 }
 
