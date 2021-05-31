@@ -4,23 +4,6 @@ $couleur_TertiaireSombre:#139273;
 $couleur_Background: #f5f5f5;
 $couleur_Background_sombre: #f6f6f6;
 
-/***** Apparition de la page ****/
-
-.main {
-    animation: main 2s forwards;
-}
-@keyframes main {
-    0% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /***** Loading Spinner *****/
 
 #loading {
@@ -287,7 +270,7 @@ $couleur_Background_sombre: #f6f6f6;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    left: -29px;
+    left: -28px;
     font-size: 22px;
 }
 .coeur-vide {

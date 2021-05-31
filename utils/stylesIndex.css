@@ -1,34 +1,4 @@
 @charset "UTF-8";
-/***** Apparition de la page ****/
-.main {
-  -webkit-animation: main 2s forwards;
-          animation: main 2s forwards;
-}
-
-@-webkit-keyframes main {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes main {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /***** Loading Spinner *****/
 #loading {
   display: -webkit-box;
@@ -396,7 +366,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  left: -29px;
+  left: -28px;
   font-size: 22px;
 }
 
