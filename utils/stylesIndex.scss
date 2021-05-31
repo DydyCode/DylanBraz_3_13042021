@@ -345,6 +345,12 @@ $couleur_Background_sombre: #f6f6f6;
         margin: 1rem;
     }
 }
+@media (max-width:1366px) {
+    .Carte_Restaurants_Texte {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
 @media (min-width:1366px) {
     .Carte_Restaurants {
         width: 550px;
