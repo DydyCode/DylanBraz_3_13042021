@@ -349,11 +349,11 @@ $couleur_Background_sombre: #f6f6f6;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
             margin: 8% auto 8% auto;
         }
         &_btn:hover {
-            box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
             background: linear-gradient(to bottom right, #f090e5, #ac74f0);
             cursor: pointer;
         }
