@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /***** Loading Spinner *****/
 #loading {
+  cursor: wait;
+  -webkit-animation: loading 2s forwards;
+          animation: loading 2s forwards;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,30 +15,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   text-align: center;
   z-index: 3;
-  background-color: #f5f5f5;
+  background-color: #9356DC;
   height: 100%;
   width: 100%;
-  cursor: wait;
-  -webkit-animation: loading 2s forwards;
-          animation: loading 2s forwards;
-  position: fixed;
 }
 
 #loading_Spinner {
-  border: 3px solid #9356DC;
+  -webkit-animation: spin 1s infinite;
+          animation: spin 1s infinite;
+  border: 3px solid #99E2D0;
+  border-top-color: #139273;
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
-  border-top-color: #f5f5f5;
-  -webkit-animation: spin 1s ease-in-out infinite;
-          animation: spin 1s ease-in-out infinite;
 }
 
 #loading_Titre {
-  color: #9356DC;
+  color: #f5f5f5;
   font-size: 2rem;
 }
 
@@ -108,6 +107,8 @@
 }
 
 .header_btn {
+  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
   background: -webkit-gradient(linear, left top, right bottom, from(#e772da), to(#9356DC));
   background: linear-gradient(to bottom right, #e772da, #9356DC);
   width: 250px;
@@ -124,13 +125,13 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2rem;
-  -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
 }
 
 .header_btn:hover {
   -webkit-box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
           box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+  background: -webkit-gradient(linear, left top, right bottom, from(#f090e5), to(#ac74f0));
+  background: linear-gradient(to bottom right, #f090e5, #ac74f0);
   cursor: pointer;
 }
 
@@ -387,6 +388,7 @@
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
 }
 
 /***** Responsive cartes Restaurants *****/

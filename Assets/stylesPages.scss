@@ -25,27 +25,90 @@ $couleur_Background_sombre: #f6f6f6;
 
 /***** Animation au refresh de la page *****/
 
-@keyframes refresh {
-    from {
+@keyframes time1 {
+    0%{
+        opacity: 0;
         transform: translateY(100px);
     }
-    to {
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
         transform:translateY(0);
     }
-}
-.Entrées, .Plats, .Desserts {
-    animation: fadein 2s;
-}
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
+    100% {
         opacity: 1;
     }
 }
-.Card {
-    animation: refresh 1s;
+@keyframes time2 {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+    80% {   
+        transform:translateY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes time3 {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        transform:translateY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes time4 {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0);
+    }
+}
+.time1 {
+    animation: time1 1s ease-in-out;
+   
+}
+.time2 {
+    animation: time2 1s ease-in-out;
+    
+}
+.time3 {
+    animation: time3 1s ease-in-out;
+}
+.time4 {
+    animation: time4 1.3s ease-in-out;
 }
 .Card:hover {
     box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
@@ -291,6 +354,7 @@ $couleur_Background_sombre: #f6f6f6;
         }
         &_btn:hover {
             box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+            background: linear-gradient(to bottom right, #f090e5, #ac74f0);
             cursor: pointer;
         }
         

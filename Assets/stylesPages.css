@@ -22,53 +22,189 @@
 }
 
 /***** Animation au refresh de la page *****/
-@-webkit-keyframes refresh {
-  from {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@keyframes refresh {
-  from {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-.Entrées, .Plats, .Desserts {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-
-@-webkit-keyframes fadein {
-  from {
+@-webkit-keyframes time1 {
+  0% {
     opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
-  to {
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes time1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes fadein {
-  from {
+@-webkit-keyframes time2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
     opacity: 0;
   }
-  to {
+  66% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
     opacity: 1;
   }
 }
 
-.Card {
-  -webkit-animation: refresh 1s;
-          animation: refresh 1s;
+@keyframes time2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes time3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes time3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes time4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes time4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.time1 {
+  -webkit-animation: time1 1s ease-in-out;
+          animation: time1 1s ease-in-out;
+}
+
+.time2 {
+  -webkit-animation: time2 1s ease-in-out;
+          animation: time2 1s ease-in-out;
+}
+
+.time3 {
+  -webkit-animation: time3 1s ease-in-out;
+          animation: time3 1s ease-in-out;
+}
+
+.time4 {
+  -webkit-animation: time4 1.3s ease-in-out;
+          animation: time4 1.3s ease-in-out;
 }
 
 .Card:hover {
@@ -377,6 +513,8 @@
 .Commande_btn:hover {
   -webkit-box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
           box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
+  background: -webkit-gradient(linear, left top, right bottom, from(#f090e5), to(#ac74f0));
+  background: linear-gradient(to bottom right, #f090e5, #ac74f0);
   cursor: pointer;
 }
 /*# sourceMappingURL=stylesPages.css.map */
