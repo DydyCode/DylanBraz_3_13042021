@@ -215,7 +215,7 @@ $couleur_Background_sombre: #f6f6f6;
     top: 0;
     right: 0;
     left: 0;
-    right: 0;
+    bottom: 0;
     font-size: 25px;
 }
 .coeur-menus-plein {
@@ -342,6 +342,7 @@ $couleur_Background_sombre: #f6f6f6;
 .Commande {
         &_btn {
             background: linear-gradient(to bottom right, #e772da, #9356DC);
+            box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
             width: 250px;
             height: 50px;
             border-radius: 40px;
@@ -349,7 +350,6 @@ $couleur_Background_sombre: #f6f6f6;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
             margin: 8% auto 8% auto;
         }
         &_btn:hover {
