@@ -161,11 +161,9 @@ $couleur_Background_sombre: #f6f6f6;
         color: grey;
     }
     &_Card:hover {
-        & .Fonctionnement_Card--fas{
-            color: $couleur_primaire;
-        }
-    }
-    &_Card:hover {
+        cursor: pointer;
+        background-color: rgb(250, 250, 250);
+        box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
         & .Fonctionnement_Card--fas{
             color: $couleur_primaire;
         }
